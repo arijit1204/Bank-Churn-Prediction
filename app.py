@@ -35,7 +35,7 @@ except Exception as e:
 # Sidebar Setup
 sidebar_image_path = os.path.join("assets", "pic_1.png")
 if os.path.exists(sidebar_image_path):
-    st.sidebar.image(sidebar_image_path, use_column_width=True)
+    st.sidebar.image(sidebar_image_path, use_container_width=True)
 else:
     st.sidebar.warning("Sidebar image not found. Ensure assets/pic_1.png exists.")
 
@@ -98,7 +98,7 @@ input_data_scaled[scale_vars] = scaler.transform(input_data[scale_vars])
 # App Header
 header_image_path = os.path.join("assets", "pic_2.png")
 if os.path.exists(header_image_path):
-    st.image(header_image_path, use_column_width=True)
+    st.image(header_image_path, use_container_width=True)
 else:
     st.warning("Header image not found. Ensure assets/pic_2.png exists.")
 
